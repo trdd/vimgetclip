@@ -12,6 +12,6 @@ then
     mkdir $DIR
 fi
 NAME=$(date +%Y-%m-%d_%H%M%S)_from_clip.jpeg
-scrot $DIR/$NAME -s 
+import $DIR/$NAME  
 vim --servername $VIMSERVER --remote-send \
 "<ESC>o\\includegraphics[width=.8\\textwidth]{graphics/$NAME}<ESC>"
